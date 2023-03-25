@@ -1,0 +1,43 @@
+
+#weathering{
+    text-align: center;
+    margin: 0px 30px;
+    padding: 25px;
+    background-color:whitesmoke;
+    box-sizing: border-box;
+    box-align:center;
+}
+
+#weathering h3{
+    font-family: calibri;
+}
+
+#weathering input{
+    background-color: white;
+    box-sizing: content-box;
+    width: 400px;
+    height: 35px;
+    border: white;
+}
+
+#weathering button{
+    background-color: white;
+    width: 150px;
+    box-sizing: content-box;
+    border: white;
+}
+
+#weathered{ 
+    margin: 10px 30px;
+    padding: 25px;
+    background-color:whitesmoke; 
+}
+
+#weathered p{ 
+   color: lightgray;
+}
+
+#weatherinfo{
+    height: 200px;
+    width: 90%;
+}
