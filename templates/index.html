@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Weather</title>
+    <script>
+        function weatherform() {
+            var city = document.getElementById("city").value;
+            document.getElementById("weatherinfo").innerHTML = city;
+        } 
+    </script>
+</head>
+
+<body>
+    <form action="/weather" method="POST">
+        <div id="weathering">
+            <h3>ENTER A CITY</h3>
+            <input type="text" name="city" id="city" />
+            <br><br>
+            <button>Get Weather Info</button>
+        </div>
+
+        <div id="weathered" input type="text">
+            <p>Your weather information</p>
+            <div id="weatherinfo"></div>
+        </div>
+    </form>
+</body>
+
+</html>
