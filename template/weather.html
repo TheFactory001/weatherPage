@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/weather.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="POST" >
+        <div id="weathering">
+            <h3>ENTER VALUES</h3> 
+            <label for="city">City</label>
+            <input id="city" name="city" type="text">
+            <label for="province">Province</label>
+            <input id="province" name="province" type="text">
+            <label for="country">Country</label>
+            <input id="country" name="country" type="text">
+            <Button id="submitForm">Get Weather Details</Button>
+        </div> 
+
+        <div id="weathered" input type="text">
+            <p>Your weather information</p>
+            <div id="weatherinfo"></div>
+    </form>  
+</body>
+</html>
