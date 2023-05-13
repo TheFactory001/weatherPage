@@ -18,13 +18,22 @@ def home():
         print(url)
         # The response is set to a request function which allows the user to return data contained in the url variable 
         response = requests.get(url)
-        # The json function makes it easy to transfer the data stored in response easy to transfer
+        # The json function makes it easy to transfer the data stored in response easy to transfer and use in external sources
         data = response.json()
         print(data)
-        
+        cloud = get_cloud(data)
+        print(cloud)
+        speed = get_speed(data)
+        print(speed)
+        pressure = get_pressure(data)
+        print(pressure)
+        country = get_country_name(data)
+        print(country)
+        another= get_another_value(data)
+        print(another)
+        return render_template('weather.html', city=city, pressure=pressure, speed=speed, cloud=cloud, country=country, another = another)
     return render_template('weather.html')
 
     
-
 if __name__ == '__main__':
     app.run(port='8000', debug=True)  
